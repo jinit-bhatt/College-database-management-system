@@ -1,0 +1,37 @@
+create database college;
+
+use college;
+
+create table Student (
+Reg_No int(5) NOT NULL,
+First_Name varchar(25),
+Last_Name varchar(25),
+Gender varchar(1),
+Blood_Group varchar(5),
+Contact_No long,
+Email_address varchar(25),
+DOB varchar(10),
+Address varchar(75),
+Sem int(2),
+Sec varchar(1),
+Teacher_Guardian varchar(5),
+Subject_code varchar(5),
+PRIMARY KEY(Reg_No));
+
+------------------------------------------------
+
+CREATE TABLE Parent(Parent_ID varchar(5),
+Parent_Name varchar(20),
+Relation varchar(10),
+Contact_No bigint,
+Email_Address varchar(25),
+Occupation varchar(15),
+Reg_No int(5));
+
+-------------------------------------------------
+
+CREATE TABLE teacher (TeacherID varchar(5),
+Teacher_Name varchar(25),
+Contact_No bigint,
+Email_Address varchar(25),
+Designation varchar(25));
